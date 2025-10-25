@@ -26,20 +26,15 @@ export default function AboutPage() {
   ];
 
   const team = [
+
     {
-      name: 'Dr. Priya Sharma',
-      role: 'Chief Nutritionist',
-      credentials: 'MSc Nutrition, Certified Dietitian',
-      description: '10+ years of experience in sports nutrition and wellness',
-    },
-    {
-      name: 'Chef Rajesh Kumar',
+      name: 'Chef Sneha N',
       role: 'Head Chef',
       credentials: 'Culinary Expert',
       description: 'Specializes in healthy, protein-rich cuisine',
     },
     {
-      name: 'Amit Desai',
+      name: 'Akhilesh',
       role: 'Fitness Consultant',
       credentials: 'Certified Personal Trainer',
       description: 'Helps design meal plans for fitness goals',

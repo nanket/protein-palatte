@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 
 export default function Header() {
@@ -19,11 +20,16 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-primary-500 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-xl">PP</span>
-            </div>
-            <span className="text-xl font-bold text-neutral-900">
+          <Link href="/" className="flex items-center space-x-3">
+            <Image
+              src="/img/logo.png"
+              alt="The Protein Palate Logo"
+              width={80}
+              height={80}
+              className="h-16 w-auto object-contain drop-shadow-md"
+              priority
+            />
+            <span className="text-xl font-bold text-neutral-900 hidden sm:inline">
               The Protein Palate
             </span>
           </Link>

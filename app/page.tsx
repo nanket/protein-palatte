@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   const featuredItems = [
@@ -52,7 +53,7 @@ export default function Home() {
       <section className="relative bg-gradient-to-br from-primary-50 via-white to-accent-50 py-20 md:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="order-2 md:order-1">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 mb-6">
                 Where <span className="text-primary-600">Taste</span> Meets{' '}
                 <span className="text-accent-600">Wellness</span>
@@ -76,9 +77,16 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="relative">
-              <div className="bg-gradient-to-br from-primary-400 to-accent-400 rounded-3xl h-96 flex items-center justify-center text-8xl">
-                🥗
+            <div className="relative order-1 md:order-2">
+              <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px]">
+                <Image
+                  src="/img/meal.png"
+                  alt="Delicious high-protein meal from The Protein Palate"
+                  fill
+                  className="object-contain rounded-3xl"
+                  priority
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
             </div>
           </div>

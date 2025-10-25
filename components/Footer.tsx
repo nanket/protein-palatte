@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -7,10 +8,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand Section */}
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-primary-500 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-xl">PP</span>
-              </div>
+            <div className="flex items-center space-x-3 mb-4">
+              <Image
+                src="/img/logo.png"
+                alt="The Protein Palate Logo"
+                width={80}
+                height={80}
+                className="h-16 w-auto object-contain drop-shadow-md"
+              />
               <span className="text-xl font-bold">The Protein Palate</span>
             </div>
             <p className="text-neutral-400 mb-4 max-w-md">
