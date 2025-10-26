@@ -8,29 +8,27 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navigation = [
-    { name: 'Home', href: '/' },
     { name: 'Menu', href: '/menu' },
-    { name: 'Meal Plans', href: '/meal-plans' },
-    { name: 'About', href: '/about' },
-    { name: 'Contact', href: '/contact' },
+    { name: 'Our Story', href: '/about' },
+    { name: 'Testimonials', href: '/#testimonials' },
   ];
 
   return (
-    <header className="bg-white shadow-md sticky top-0 z-50">
+    <header className="bg-white shadow-sm sticky top-0 z-50">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
             <Image
-              src="/img/logo.png"
+              src="/img/logo-1.png"
               alt="The Protein Palate Logo"
-              width={80}
-              height={80}
-              className="h-16 w-auto object-contain drop-shadow-md"
+              width={120}
+              height={120}
+              className="h-16 md:h-20 w-auto object-contain"
               priority
             />
-            <span className="text-xl font-bold text-neutral-900 hidden sm:inline">
-              The Protein Palate
+            <span className="text-xl md:text-2xl font-bold text-neutral-900 hidden sm:inline">
+              Protein Palate
             </span>
           </Link>
 
@@ -40,16 +38,16 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-neutral-700 hover:text-primary-600 font-medium transition-colors"
+                className="text-neutral-700 hover:text-primary-500 font-medium transition-colors"
               >
                 {item.name}
               </Link>
             ))}
             <Link
               href="/contact"
-              className="bg-primary-500 text-white px-6 py-2 rounded-full hover:bg-primary-600 transition-colors font-medium"
+              className="bg-primary-500 text-white px-6 py-2.5 rounded-full hover:bg-primary-600 transition-all font-semibold shadow-md hover:shadow-lg hover:-translate-y-0.5"
             >
-              Order Now
+              Sign In
             </Link>
           </div>
 
@@ -99,10 +97,10 @@ export default function Header() {
               ))}
               <Link
                 href="/contact"
-                className="bg-primary-500 text-white px-6 py-2 rounded-full hover:bg-primary-600 transition-colors font-medium text-center"
+                className="bg-primary-500 text-white px-6 py-2.5 rounded-full hover:bg-primary-600 transition-all font-semibold text-center shadow-md"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Order Now
+                Sign In
               </Link>
             </div>
           </div>

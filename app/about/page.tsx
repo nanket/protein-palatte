@@ -75,19 +75,19 @@ export default function AboutPage() {
   ];
 
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-neutral-50 min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary-600 to-primary-700 text-white py-16">
+      <section className="bg-gradient-to-br from-primary-400 via-primary-500 to-primary-600 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">About The Protein Palate</h1>
-          <p className="text-xl text-primary-100 max-w-3xl mx-auto">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Story</h1>
+          <p className="text-xl text-white/90 max-w-3xl mx-auto">
             Your trusted wellness community in Hadapsar, Pune - where taste meets nutrition
           </p>
         </div>
       </section>
 
       {/* Our Story */}
-      <section className="py-16 bg-neutral-50">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>

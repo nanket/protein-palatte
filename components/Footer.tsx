@@ -3,23 +3,23 @@ import Image from 'next/image';
 
 export default function Footer() {
   return (
-    <footer className="bg-neutral-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <footer className="bg-neutral-800 text-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand Section */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
               <Image
-                src="/img/logo.png"
+                src="/img/logo-1.png"
                 alt="The Protein Palate Logo"
-                width={80}
-                height={80}
-                className="h-16 w-auto object-contain drop-shadow-md"
+                width={120}
+                height={120}
+                className="h-16 md:h-20 w-auto object-contain"
               />
-              <span className="text-xl font-bold">The Protein Palate</span>
+              <span className="text-xl md:text-2xl font-bold">Protein Palate</span>
             </div>
-            <p className="text-neutral-400 mb-4 max-w-md">
-              Your trusted partner for nutritious, high-protein meals in Hadapsar, Pune. 
+            <p className="text-neutral-300 mb-6 max-w-md">
+              Your trusted partner for nutritious, high-protein meals in Hadapsar, Pune.
               Healthy doesn&apos;t mean boring - taste the difference!
             </p>
             <div className="flex space-x-4">

@@ -101,13 +101,13 @@ export default function MealPlansPage() {
   return (
     <div className="bg-neutral-50 min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary-600 to-primary-700 text-white py-16">
+      <section className="bg-gradient-to-br from-primary-400 via-primary-500 to-primary-600 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Meal Plans</h1>
-          <p className="text-xl text-primary-100 mb-6">
+          <p className="text-xl text-white/90 mb-6">
             Customized nutrition plans tailored to your fitness goals
           </p>
-          <div className="inline-block bg-accent-500 text-white px-6 py-3 rounded-full font-semibold">
+          <div className="inline-block bg-white text-primary-600 px-6 py-3 rounded-full font-semibold shadow-lg">
             🎉 First Month: Get 15% OFF
           </div>
         </div>

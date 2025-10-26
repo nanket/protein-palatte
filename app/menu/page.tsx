@@ -162,20 +162,20 @@ export default function MenuPage() {
   return (
     <div className="bg-neutral-50 min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary-600 to-primary-700 text-white py-16">
+      <section className="bg-gradient-to-br from-primary-400 via-primary-500 to-primary-600 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Menu</h1>
-          <p className="text-xl text-primary-100 mb-6">
+          <p className="text-xl text-white/90 mb-6">
             Every dish crafted with 25-30g protein and nutritionist approval
           </p>
-          <div className="inline-block bg-accent-500 text-white px-6 py-3 rounded-full font-semibold">
+          <div className="inline-block bg-white text-primary-600 px-6 py-3 rounded-full font-semibold shadow-lg">
             🎉 Bulk Orders: ₹100-₹150 per meal
           </div>
         </div>
       </section>
 
       {/* Add-on Section */}
-      <section className="bg-white py-8 border-b border-neutral-200">
+      <section className="bg-white py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="mb-4 md:mb-0">
@@ -205,7 +205,7 @@ export default function MenuPage() {
                   {category.items.map((item, itemIndex) => (
                     <div
                       key={itemIndex}
-                      className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6"
+                      className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 p-6"
                     >
                       <h3 className="text-xl font-bold text-neutral-900 mb-2">
                         {item.name}
